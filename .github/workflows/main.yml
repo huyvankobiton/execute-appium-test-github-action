@@ -9,7 +9,7 @@ jobs:
     name: Ga
     steps:
       - uses: actions/checkout@v3
-      - uses: linhvo2010/execute-appium-test-github-action@main
+      - uses: huyvankobiton/execute-appium-test-github-action@main
         with:
           kobi_username: ${{ secrets.KOBI_USERNAME }}
           kobi_api_key: ${{ secrets.KOBI_API_KEY }}
