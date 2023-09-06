@@ -14,8 +14,8 @@ jobs:
           kobi_username: kobitonadmin
           kobi_api_key: 05bcba8c-fe7e-41c7-add8-c0e3e9eb5a02
           executor_url: https://executor-demo.kobiton.com # get this from our support team
-          executor_username: kobiton-demo # get this from our support team
-          executor_password: K0bit0n@2019 # get this from our support team
+          executor_username: ${{ 'kobiton-demo' }} # get this from our support team
+          executor_password: ${{ 'K0bit0n@2019' }} # get this from our support team
           git_repo_url: https://github.com/huyvankobiton/azure-devops-automation-java-demo.git
           git_repo_branch: main
 #           git_repo_ssh_key: ${{ secrets.GIT_REPO_SSH_KEY }}
