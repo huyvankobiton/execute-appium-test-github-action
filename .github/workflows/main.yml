@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    name: Ga
+    steps:
+      - uses: actions/checkout@v3
+      - uses: huyvantest/execute-appium-test-github-action@main
+        with:
+          kobi_username: kobitonadmin
+          kobi_api_key: 05bcba8c-fe7e-41c7-add8-c0e3e9eb5a02
+          executor_url: https://executor-demo.kobiton.com # get this from our support team
+          executor_username: kobiton-demo # get this from our support team
+          executor_password: K0bit0n@2019 # get this from our support team
+          git_repo_url: https://github.com/huyvankobiton/azure-devops-automation-java-demo.git
+          git_repo_branch: main
+#           git_repo_ssh_key: ${{ secrets.GIT_REPO_SSH_KEY }}
+          app_id: 'kobiton-store:v624080'
+          use_custom_device: 'true'
+          device_name: 'Galaxy S21 5G'
+          device_platform_version: '13'
+          
+          device_platform: 'Android'
+          root_directory: '/'
+          command: 'mvn test'
+          wait_for_execution: 'true'
