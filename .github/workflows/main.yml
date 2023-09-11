@@ -21,9 +21,9 @@ jobs:
           git_repo_url: https://github.com/huyvankobiton/azure-devops-automation-java-demo.git
           git_repo_branch: main
 #           git_repo_ssh_key: ${{ secrets.GIT_REPO_SSH_KEY }}
-          app_id: 'kobiton-store:v624080'
+          # app_id: 'kobiton-store:v624080' // app-id
           use_custom_device: 'true'
-          device_name: 'Galaxy S21 5G'
+          device_name: 'Pixel 5'
           device_platform_version: '13'
           
           device_platform: 'Android'
