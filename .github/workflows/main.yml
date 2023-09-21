@@ -4,6 +4,13 @@ on:
       - main
 
 jobs:
+  test-ping:
+    runs-on: ubuntu-latest
+    name: test ping test exectuor
+    steps:
+      -  name: test
+         run: curl https://executor-test.kobiton.com/ping
+        
   run-test:
     runs-on: ubuntu-latest
     name: GA
