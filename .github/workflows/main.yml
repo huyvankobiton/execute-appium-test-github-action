@@ -13,7 +13,7 @@ jobs:
         with:
           kobi_username: kobitonadmin+businesscloud
           kobi_api_key: 884f4fc8-3fbe-42d0-90f3-3fa706d6554a
-          executor_url: https://executor-demo.kobiton.com # get this from our support team
+          executor_url: https://executor-test.kobiton.com # get this from our support team
           executor_username: kobiton-demo # get this from our support team
           executor_password: K0bit0n@2019 # get this from our support team
           # git_repo_url: https://github.com/huyvankobiton/azure-devops-automation-java-demo.git
